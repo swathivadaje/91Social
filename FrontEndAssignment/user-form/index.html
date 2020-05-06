@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user-form">
+            <h1>User Form</h1>
+            <form id="user-form" action="javascript:void(0);">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <select name="title" id="title" class="form-control" required>
+                        <option value="Mr">Mr</option>
+                        <option value="Mr">Mrs</option>
+                        <option value="Mr">Ms</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" name="name" min="3" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" name="password" min="3" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No.</label>
+                    <input type="tel" id="phone" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" class="form-control" name="address" min="15" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn-primary" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="user-info">
+            <h1>User Details</h1>
+            <div class="form-group">
+                <span class="user-detail__label">Title</span>
+                <span id="user-title" class="user-detail__value"></span>
+            </div>
+            <div class="form-group">
+                <span class="user-detail__label">Name</span>
+                <span id="user-name" class="user-detail__value"></span>
+            </div>
+            <div class="form-group">
+                <span class="user-detail__label">Password</span>
+                <span id="user-password" class="user-detail__value"></span>
+            </div>
+            <div class="form-group">
+                <span class="user-detail__label">Phone no.</span>
+                <span id="user-phone" class="user-detail__value"></span>
+            </div>
+            <div class="form-group">
+                <span class="user-detail__label">Address</span>
+                <span id="user-address" class="user-detail__value"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
